@@ -11,6 +11,13 @@
   font-family: "Outfit", sans-serif;
 }
 
+body {
+  background-color: #f3e6d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 h1,
 h2 {
   font-family: "Young Serif", serif;
@@ -18,12 +25,12 @@ h2 {
 }
 
 h1 {
-  color: hsl(24, 5%, 18%);
+  color: #302d2c;
 }
 
 h2 {
   margin-bottom: 16px;
-  color: hsl(14, 45%, 36%);
+  color: #854632;
 }
 
 ul,
@@ -37,7 +44,7 @@ ol {
 p,
 li,
 td {
-  color: hsl(30, 10%, 34%);
+  color: #5f574e;
 }
 
 li {
@@ -60,11 +67,11 @@ ul li::before {
   height: 0.3rem;
   min-width: 0.3rem;
   border-radius: 0.15rem;
-  background-color: hsl(332, 51%, 32%);
+  background-color: #7b284f;
 }
 
 hr {
-  background-color: hsl(30, 18%, 87%);
+  background-color: #e4ded8;
 }
 
 img {
@@ -74,21 +81,23 @@ img {
 }
 
 .recipe {
+  width: 100%;
   padding: 0px 24px 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background-color: white;
 }
 .recipe__description {
   line-height: 1.5rem;
 }
 .recipe-preparation {
-  background-color: hsl(330, 100%, 98%);
+  background-color: #fff5fa;
   border-radius: 0.5rem;
   padding: 16px;
 }
 .recipe-preparation__title {
-  color: hsl(332, 51%, 32%);
+  color: #7b284f;
   margin-bottom: 0.5rem;
 }
 .recipe-instructions__list {
@@ -104,7 +113,7 @@ img {
   content: counter(cpt) ".";
   font-size: 1rem;
   font-weight: 600;
-  color: hsl(14, 45%, 36%);
+  color: #854632;
 }
 .recipe-nutrition__table {
   margin-top: 16px;
@@ -112,7 +121,7 @@ img {
   border-collapse: collapse;
 }
 .recipe-nutrition__table tr:not(:last-child) {
-  border-bottom: 1px solid hsl(30, 18%, 87%);
+  border-bottom: 1px solid #e4ded8;
 }
 .recipe-nutrition__label {
   width: 50%;
@@ -120,7 +129,25 @@ img {
 }
 .recipe-nutrition__value {
   font-weight: 600;
-  color: hsl(14, 45%, 36%);
+  color: #854632;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    padding: 48px;
+  }
+
+  img {
+    width: 100%;
+    left: 0;
+    border-radius: 0.5rem;
+  }
+
+  .recipe {
+    max-width: 600px;
+    border-radius: 1rem;
+    padding: 36px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
