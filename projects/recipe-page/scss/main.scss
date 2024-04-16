@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+$nutmeg: hsl(14, 45%, 36%);
+$dark-raspberry: hsl(332, 51%, 32%);
+
+$white: hsl(0, 0%, 100%);
+$rose-white: hsl(330, 100%, 98%);
+$eggshell: hsl(30, 54%, 90%);
+$light-grey: hsl(30, 18%, 87%);
+$wenge-brown: hsl(30, 10%, 34%);
+$dark-charcoal: hsl(24, 5%, 18%);
+
+$gap: 16px;
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* {
+	font-family: 'Outfit', sans-serif;
+}
+
+h1,
+h2 {
+	font-family: 'Young Serif', serif;
+	font-weight: 400;
+}
+
+.recipe {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: $gap;
+	&-preparation {
+		background-color: $rose-white;
+		padding: 16px;
+		&__summary {
+			padding-left: 16px;
+		}
+	}
+}
