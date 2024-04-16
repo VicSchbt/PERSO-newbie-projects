@@ -42,41 +42,31 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The point of the mini-project was to work with different type of list. And for both of them there was some custom style on the marker. The most interesting part was learning that it is possible to use a custom counter for an `ol` list.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```scss
+&-instructions__list {
+  counter-reset: cpt;
+  list-style: none;
+  li {
+    counter-increment: cpt;
+    display: flex;
+    gap: $gap;
+    &::before {
+      content: counter(cpt) ".";
+      font-size: 1rem;
+      font-weight: 600;
+      color: $nutmeg;
+    }
+  }
 }
 ```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
