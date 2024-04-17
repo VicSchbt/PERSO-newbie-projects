@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/static/WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/static/WorkSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/static/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url("../assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media screen and (min-width: 450px) {
+  body {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.faq {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  margin: 140px 1rem 1rem 1rem;
+  padding: 1.5rem;
+  max-width: 40%;
+}
+.faq__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.faq__title img {
+  height: 2rem;
+  object-fit: contain;
+}
+.faq-accordion__trigger {
+  width: 100%;
+  padding: 1rem 0;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.faq-accordion__trigger span {
+  color: hsl(292, 42%, 14%);
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: left;
+}
+.faq-accordion__infos {
+  color: hsl(292, 16%, 49%);
+  line-height: 1.5rem;
+  max-height: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.faq-accordion__infos:not(:last-child) {
+  border-bottom: 1px solid hsl(292, 16%, 49%);
+}
+.faq-accordion__infos.open {
+  height: min-content;
+  max-height: 10rem;
+}
+.faq-accordion__infos.open:not(:last-child) {
+  padding-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
