@@ -1,0 +1,141 @@
+@font-face {
+	font-family: 'Overpass';
+	src: url('../assets/fonts/Overpass-Regular.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Overpass';
+	src: url('../assets/fonts/Overpass-Bold.ttf');
+	font-weight: 700;
+}
+
+$orange: hsl(25, 97%, 53%);
+
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(217, 16%, 19%);
+$dark-blue: hsl(220, 16%, 16%);
+$very-dark-blue: hsl(226, 9%, 9%);
+
+* {
+	font-family: 'Overpass', sans-serif;
+	font-weight: 400;
+}
+
+*,
+::after,
+::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $very-dark-blue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100dvh;
+	margin: 1rem;
+}
+
+.rating {
+	background-color: $dark-blue;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	max-width: 20rem;
+	&-form {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		&.hide {
+			display: none;
+		}
+		&__star {
+			height: 3rem;
+			width: 3rem;
+			background-color: $medium-grey;
+			border-radius: 1.5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&__title {
+			font-size: 1.75rem;
+			color: $white;
+		}
+		&__description {
+			color: $light-grey;
+		}
+		&__choices {
+			display: flex;
+			justify-content: space-between;
+			border: none;
+			input[type='radio'] {
+				position: absolute;
+				left: -500rem;
+				&:checked + label {
+					color: $white;
+					background-color: $light-grey;
+				}
+			}
+			label {
+				display: block;
+				background-color: $medium-grey;
+				height: 3rem;
+				width: 3rem;
+				border-radius: 1.5rem;
+				color: $light-grey;
+				cursor: pointer;
+				padding-top: 1rem;
+				line-height: 1rem;
+				text-align: center;
+				transition: all 0.5s;
+				&:hover {
+					color: $white;
+					background-color: $orange;
+				}
+			}
+		}
+		&__submit-btn {
+			border: none;
+			background-color: $orange;
+			color: $white;
+			text-transform: uppercase;
+			font-size: 1rem;
+			letter-spacing: 0.2rem;
+			padding: 1rem;
+			border-radius: 1.5rem;
+			cursor: pointer;
+			transition: all 0.5s;
+			&:hover {
+				background-color: $white;
+				color: $orange;
+			}
+		}
+	}
+	&-result {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		&.hide {
+			display: none;
+		}
+		&__choice {
+			color: $orange;
+			padding: 0.5rem 1rem;
+			background-color: $medium-grey;
+			border-radius: 1.5rem;
+		}
+		&__thank {
+			font-size: 1.75rem;
+			color: $white;
+		}
+		&__description {
+			color: $light-grey;
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="./css/style.css"
+		/>
+
+		<title>Frontend Mentor | Interactive rating component</title>
+	</head>
+	<body>
+		<!-- Rating state start -->
+		<main class="rating">
+			<form class="rating-form">
+				<div class="rating-form__star">
+					<img
+						src="./assets/images/icon-star.svg"
+						alt=""
+					/>
+				</div>
+				<legend class="rating-form__title">How did we do?</legend>
+				<p class="rating-form__description">
+					Please let us know how we did with your support request. All feedback
+					is appreciated to help us improve our offering!
+				</p>
+				<fieldset class="rating-form__choices">
+					<input
+						type="radio"
+						id="rating-choice-1"
+						name="rating-choice"
+						value="1"
+					/>
+					<label for="rating-choice-1">1</label>
+
+					<input
+						type="radio"
+						id="rating-choice-2"
+						name="rating-choice"
+						value="2"
+					/>
+					<label for="rating-choice-2">2</label>
+
+					<input
+						type="radio"
+						id="rating-choice-3"
+						name="rating-choice"
+						value="3"
+					/>
+					<label for="rating-choice-3">3</label>
+
+					<input
+						type="radio"
+						id="rating-choice-4"
+						name="rating-choice"
+						value="4"
+					/>
+					<label for="rating-choice-4">4</label>
+
+					<input
+						type="radio"
+						id="rating-choice-5"
+						name="rating-choice"
+						value="5"
+					/>
+					<label for="rating-choice-5">5</label>
+				</fieldset>
+
+				<button
+					type="submit"
+					class="rating-form__submit-btn"
+				>
+					Submit
+				</button>
+			</form>
+
+			<section class="rating-result hide">
+				<img
+					src="./assets/images/illustration-thank-you.svg"
+					alt=""
+				/>
+				<p class="rating-result__choice">
+					You selected <span id="rating-result__choice">#</span> out of 5
+				</p>
+				<h1 class="rating-result__thank">Thank you!</h1>
+				<p class="rating-result__description">
+					We appreciate you taking the time to give a rating. If you ever need
+					more support, don’t hesitate to get in touch!
+				</p>
+			</section>
+		</main>
+
+		<script
+			src="./js/app.js"
+			defer
+		></script>
+	</body>
+</html>
