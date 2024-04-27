@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Jersey 10";
+  src: url("../assets/fonts/Jersey10-Regular.ttf");
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Jersey 10", sans-serif;
+  text-align: center;
+}
+
+body {
+  padding: 1rem;
+  background-color: #a9d6e5;
+  height: 100dvh;
+}
+
+.homepage-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+.homepage-content__title {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  color: #012a4a;
+}
+.homepage-content__descr {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #013a63;
+  background-color: #89c2d9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.homepage-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 50%;
+}
+.homepage-content__link {
+  list-style: none;
+}
+.homepage-content__link a {
+  color: #012a4a;
+  font-size: 1.5rem;
+  display: block;
+  padding: 1rem;
+  background-color: #eff8fa;
+  border: 2px dotted #012a4a;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.homepage-content__link a:visited {
+  color: #012a4a;
+}
+.homepage-content__link a:hover {
+  background-color: #012a4a;
+  color: #eff8fa;
+  font-size: 2rem;
+}
+.homepage-footer {
+  padding: 1rem 0;
+}
+.homepage-footer__attribution {
+  color: #012a4a;
+}
+.homepage-footer__links {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.homepage-footer__link {
+  list-style: none;
+}
+.homepage-footer__link a {
+  display: block;
+  height: 2.2rem;
+  width: 2.2rem;
+  text-decoration: none;
+}
+.homepage-footer__link a img {
+  height: 1.8rem;
+  width: 1.8rem;
+  object-fit: contain;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=style.css.map */

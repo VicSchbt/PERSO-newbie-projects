@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass-rating-component": "sass --watch ./projects/interactive-rating-component/scss/main.scss ./projects/interactive-rating-component/css/style.css",
+    "sass-results-component": "sass --watch ./projects/results-summary-component/scss/main.scss ./projects/results-summary-component/css/style.css",
+    "sass-main": "sass --watch ./scss/main.scss ./css/style.css"
   },
   "devDependencies": {
     "sass": "^1.75.0",

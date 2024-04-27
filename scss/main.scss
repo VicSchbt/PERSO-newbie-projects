@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'Jersey 10';
+	src: url('../assets/fonts/Jersey10-Regular.ttf');
+}
+
+$prussian-blue: #012a4aff;
+$indigo-dye: #013a63ff;
+$indigo-dye-2: #01497cff;
+$indigo-dye-3: #014f86ff;
+$ucla-blue: #2a6f97ff;
+$cerulean: #2c7da0ff;
+$air-force-blue: #468fafff;
+$air-superiority-blue: #61a5c2ff;
+$sky-blue: #89c2d9ff;
+$light-blue: #a9d6e5ff;
+$alice-blue: #eff8faff;
+
+*,
+::after,
+::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+* {
+	font-family: 'Jersey 10', sans-serif;
+	text-align: center;
+}
+
+body {
+	padding: 1rem;
+	background-color: $light-blue;
+	height: 100dvh;
+}
+
+.homepage {
+	&-content {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		align-items: center;
+		padding: 1rem 0;
+		&__title {
+			font-size: 3rem;
+			letter-spacing: 0.3rem;
+			color: $prussian-blue;
+		}
+		&__descr {
+			font-size: 1.5rem;
+			letter-spacing: 0.1rem;
+			color: $indigo-dye;
+			background-color: $sky-blue;
+			border-radius: 0.5rem;
+			padding: 1rem;
+		}
+		&__list {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			min-width: 50%;
+		}
+		&__link {
+			list-style: none;
+			a {
+				color: $prussian-blue;
+				font-size: 1.5rem;
+				display: block;
+				padding: 1rem;
+				background-color: $alice-blue;
+				border: 2px dotted $prussian-blue;
+				border-radius: 0.5rem;
+				text-decoration: none;
+				transition: all 0.5s;
+				&:visited {
+					color: $prussian-blue;
+				}
+				&:hover {
+					background-color: $prussian-blue;
+					color: $alice-blue;
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+	&-footer {
+		padding: 1rem 0;
+		&__attribution {
+			color: $prussian-blue;
+		}
+		&__links {
+			padding-top: 1rem;
+			display: flex;
+			gap: 1rem;
+			justify-content: center;
+		}
+		&__link {
+			list-style: none;
+			a {
+				display: block;
+				height: 2.2rem;
+				width: 2.2rem;
+				text-decoration: none;
+				img {
+					height: 1.8rem;
+					width: 1.8rem;
+					object-fit: contain;
+					position: relative;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
+}
