@@ -17,10 +17,9 @@ This is a website grouping the solutions to the [newbie level Frontend Mentor ch
 
 ![](./screenshots/Screenshot-desktop.png)
 
-<!--
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Live Site URL: [Newbie Projects](https://vicschbt.github.io/PERSO-newbie-projects/)
 
 ## Author
 
