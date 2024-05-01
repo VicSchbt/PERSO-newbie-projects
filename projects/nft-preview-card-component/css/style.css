@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/Outfit-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/Outfit-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/Outfit-SemiBold.ttf");
+  font-weight: 600;
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  height: 100dvh;
+  padding: 2rem;
+  background-color: #0d192b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #2f415b;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #14253d;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.card-image {
+  border-radius: 0.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.card-image:hover .card-image__overlay {
+  opacity: 0.3;
+}
+.card-image:hover .card-image__view {
+  opacity: 1;
+}
+.card-image__content, .card-image__overlay {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.card-image__overlay {
+  height: calc(100% - 4px);
+  background-color: #00fff7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.card-image__view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s;
+}
+.card-title {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.card-title:hover {
+  color: #00fff7;
+}
+.card-description {
+  color: #8bacda;
+  font-weight: 300;
+}
+.card-infos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-infos p {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.card-infos p:nth-child(1) {
+  color: #00fff7;
+  font-weight: 600;
+}
+.card-infos p:nth-child(2) {
+  color: #8bacda;
+}
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card-author__avatar {
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+.card-author__attribution {
+  color: #8bacda;
+  font-weight: 300;
+}
+.card-author__attribution span {
+  color: white;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.card-author__attribution span:hover {
+  color: #00fff7;
+}
+
+/*# sourceMappingURL=style.css.map */
