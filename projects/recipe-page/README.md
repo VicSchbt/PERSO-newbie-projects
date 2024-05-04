@@ -22,7 +22,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/recipe-page-vanilla-js-8B6GDTtf_Z)
 - Live Site URL: [Get the omelette recipe here](https://vicschbt.github.io/PERSO-newbie-projects/projects/recipe-page/index.html)
 
 ## My process
