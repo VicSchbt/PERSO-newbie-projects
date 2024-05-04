@@ -23,11 +23,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/screenshot.jpg)
+![](./screenshots/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/product-preview-component-vanilla-js-4IdAe40wcr)
 - Live Site URL: [The component](https://vicschbt.github.io/PERSO-newbie-projects/projects/product-preview-card-component/index.html)
 
 ## My process
