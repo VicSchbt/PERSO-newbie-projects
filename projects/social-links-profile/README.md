@@ -22,11 +22,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots//screenshot.png)
+![](./screenshots/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/social-links-profile-vanilla-js-X8GvYov7eK)
 - Live Site URL: [Social Links](https://vicschbt.github.io/PERSO-newbie-projects/projects/social-links-profile/index.html)
 
 ## My process
